@@ -1,0 +1,99 @@
+.report-container {
+  width: 100%;
+  padding: 20px;
+  background: var(--bg-main);
+  min-height: 100vh;
+}
+
+/* TITLE */
+.report-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+/* FILTER SECTION */
+.report-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+/* SELECT */
+.report-filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-main);
+  outline: none;
+}
+
+/* EXPORT BUTTON */
+.export-btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.export-btn:hover {
+  opacity: 0.9;
+}
+
+/* TABLE */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+/* HEADER */
+.report-table thead {
+  background: var(--hover);
+}
+
+.report-table th {
+  padding: 14px;
+  text-align: left;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* BODY */
+.report-table td {
+  padding: 14px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ROW HOVER */
+.report-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.report-table tbody tr:hover {
+  background: var(--hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .report-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .report-filters select,
+  .export-btn {
+    width: 100%;
+  }
+}

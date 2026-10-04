@@ -1,0 +1,70 @@
+.page-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* EMPTY STATE TEXT (scoped, not global p) */
+.empty-text {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* TABLE */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* HEADER */
+.user-table thead {
+  background: var(--hover);
+}
+
+.user-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+/* BODY */
+.user-table td {
+  padding: 14px;
+  font-size: 14px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ROW HOVER */
+.user-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.user-table tbody tr:hover {
+  background: var(--hover);
+}
+
+/* LAST ROW */
+.user-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 13px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+  }
+}

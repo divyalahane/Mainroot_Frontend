@@ -1,0 +1,4 @@
+.sidebar {
+  background: var(--bg-sidebar);
+  color: var(--text-main);
+}
